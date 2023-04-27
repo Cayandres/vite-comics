@@ -1,6 +1,6 @@
 <script>
 export default {
-  name:'header'
+  name:'Header'
   
 }
 </script>
@@ -38,11 +38,9 @@ export default {
     ul{
       display: flex;
       li{
-        list-style: none;
         margin: 20px;
         padding: 20px;
         a{
-          text-decoration: none;
           color: black;
             &:hover{
               color: $primary-color;
