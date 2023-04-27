@@ -1,8 +1,8 @@
 <script>
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
-import SectionBlu1 from './components/SectionBlu.vue'
-import Sectionblu from "./components/Sectionblu.vue"
+import Sectionblu from './components/SectionBlu.vue'
+import Footer from "./components/Footer.vue"
 export default {
   name: "App",
   
@@ -10,17 +10,17 @@ export default {
     Header,
     Main,
     Sectionblu,
-    SectionBlu1
+    Footer
   }
 }
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <Header/>
     <Main/>
     <sectionblu/>
-    <h1>ciao</h1>
+    <Footer/>
   </div>
 </template>
 

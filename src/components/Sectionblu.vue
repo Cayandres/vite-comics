@@ -6,7 +6,7 @@ export default {
 
 <template>
   <nav>
-    <ul>
+    <ul class="container">
       <li>
         <img src="../assets/img/buy-comics-digital-comics.png" alt="">
         <a href="">1</a>

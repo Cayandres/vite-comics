@@ -6,16 +6,20 @@ export default {
 </script>
 
 <template>
-  <div><span>content goes here</span></div>
+  <main>
+    <div class="container"><span>content goes here</span></div>
+  </main>
 </template>
 
 <style lang="scss" scoped>
 @use "../scss/general/mixin" as*;
-
-  div{
+  main{
+    background-color: black;
+    div{
     @include centerFlex('both');
     color: white;
     height: 100px;
-    background-color: black;
   }
+  }
+ 
 </style>
