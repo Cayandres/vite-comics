@@ -4,4 +4,7 @@
 - tutto è dentro ad un contenitore 
 - Colori principali sono nero e blu
 
+# Steps
+- creare dei file vue con le 4 parti principali
+
 
