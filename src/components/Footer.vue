@@ -51,9 +51,25 @@ export default {
         <img src="../assets/img/dc-logo-bg.png" alt="">
       </div>
     </div>
-    <div class="footer down"></div>
+    
+  </div>
+  <div class="footer-social">
+    <div class="footer down container">
+      <button>SING-UP NOW</button>
+      <div class="social">
+        <h4>FOLLOW US</h4>
+        <ul>
+          <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+        </ul>
+      </div>
+
 
     </div>
+  </div>
   </footer>
  
 </template>
@@ -81,8 +97,23 @@ footer{
         position: absolute;
         bottom: -40px;
         height: 350px;
-        
-        
+      }
+    }
+  }
+
+  .footer-social{
+    height: 100px;
+    background-color: black;
+    .footer.down{
+      height: 100%;
+      @include beetweenAround('beetween');
+      align-items: center;
+      .social{
+        color: white;
+        display: flex;
+        ul{
+          display: flex;         
+        }
       }
     }
   }
