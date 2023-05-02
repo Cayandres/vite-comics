@@ -1,6 +1,12 @@
 <script>
+import { headerMenu } from '../data/menus';
 export default {
-  name:'Header'
+  name:'Header',
+  data(){
+    return{
+      headerMenu
+    }
+  }
   
 }
 </script>
@@ -13,14 +19,11 @@ export default {
     <div>
       <nav>
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">1</a></li>
+          <li v-for="(link, index) in headerMenu"
+          :key="index"
+          :class="{'active' : link.active}">{{link.label}}
+            <a href="#"></a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -38,20 +41,16 @@ export default {
     ul{
       display: flex;
       li{
-        margin: 20px;
-        padding: 20px;
+        text-transform: uppercase;
+        padding: 40px 5px;
         a{
           color: black;
             &:hover{
               color: $primary-color;
             }
+          }
         }
       }
     }
-  }
- 
-
-
-
-
+   
 </style>
