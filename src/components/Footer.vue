@@ -129,7 +129,8 @@ footer{
       img{
         position: absolute;
         bottom: -40px;
-        height: 350px;
+        height: 550px;
+        width: 100%;
       }
     }
   }
