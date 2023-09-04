@@ -1,10 +1,10 @@
 <script>
 import  dcList  from '../data/dc-comics.json'
-import  ProducCard  from './partials/ProductCard.vue'
+import  ProductCard  from './partials/ProductCard.vue'
 export default {
   name:'Main',
   components:{
-    ProducCard
+    ProductCard
   },
   props:{
 
@@ -29,7 +29,7 @@ export default {
     <div class="container-background">
       <div class="container">
         <span>CURRENT SERIES</span>
-        <ProducCard 
+        <ProductCard 
         v-for="(comic, index) in dcList"
         :key="index"
         :image="comic.thumb"
@@ -63,6 +63,7 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 80px;
+        position: relative;
         span{
           font-size: 30px;
           font-weight: 700;
@@ -70,7 +71,7 @@ export default {
           background-color: $primary-color;
           color: white;
           position: absolute;
-          bottom: 200px;
+          top: -30px;
           z-index: 999;
         }
         

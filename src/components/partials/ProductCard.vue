@@ -1,7 +1,7 @@
 
 <script>
 export default {
-  name: 'ProducCard',
+  name: 'ProductCard',
   props:{
     image: String,
     productName: String
@@ -25,10 +25,10 @@ export default {
           width: calc(100%/6);
           .card-image{
             aspect-ratio: 1/1;
-            height: 150px; 
+            height: 200px; 
             overflow: hidden;
             img{
-              width: 100%;
+              width: 90%;
               object-fit: cover; 
             }
           }
